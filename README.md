@@ -16,15 +16,16 @@ https://ahmed1492.github.io/E-commerce-React-App/
 
 ## Technologies Used
 
-- **React.js**: For building the user interface.
-- **Sass (SCSS)**: For styling the application.
-- **React Router**: For navigation between pages.
+- React.js: For building the user interface.
+- Sass (SCSS): For styling the application.
+- React Router : For navigation between pages.
+- State Manegment : Redux toolkit.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/ahmed1492/E-commerce-React-App.git
     ```
 2. Navigate to the project folder:
     ```bash
