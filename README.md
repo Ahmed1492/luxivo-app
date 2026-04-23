@@ -5,7 +5,7 @@ A modern, full-featured e-commerce web application built with React, Redux Toolk
 ---
 
 ## 🚀 Live Demo  
-[View Live](https://luxivo-app-git-main-ahmed1492s-projects.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/View%20Live-Vercel-blue?style=for-the-badge)](https://luxivo-app-git-main-ahmed1492s-projects.vercel.app/)
 
 
 ---
