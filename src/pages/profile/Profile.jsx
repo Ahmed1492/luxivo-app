@@ -26,7 +26,6 @@ export const Profile = () => {
   const [expandedOrder, setExpandedOrder] = useState(null);
 
   const [activeTab, setActiveTab] = useState('overview');
-  const [isEditing, setIsEditing] = useState(false);
   const [form, setForm] = useState({ name: user?.name || '', email: user?.email || '' });
   const [saved, setSaved] = useState(false);
 
@@ -36,7 +35,6 @@ export const Profile = () => {
 
   const handleSave = () => {
     dispatch(updateProfile(form));
-    setIsEditing(false);
     setSaved(true);
     setTimeout(() => setSaved(false), 3000);
   };
@@ -77,7 +75,7 @@ export const Profile = () => {
             <button
               key={key}
               className={`sidebar-item ${activeTab === key ? 'active' : ''}`}
-              onClick={() => { setActiveTab(key); setIsEditing(key === 'settings'); }}
+              onClick={() => { setActiveTab(key); }}
             >
               {icon} {label}
             </button>

@@ -56,7 +56,7 @@ export const SingleProduct = ({ url }) => {
       })
       .catch(console.log)
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, url]);
 
   const handleThumb = (src, idx) => { setMainImage(src); setActiveThumb(idx); };
 

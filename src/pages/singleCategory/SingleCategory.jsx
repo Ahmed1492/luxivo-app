@@ -23,7 +23,7 @@ export const SingleCategory = ({ url }) => {
       .then(res => setAllProducts(res.data.products))
       .catch(console.log)
       .finally(() => setLoading(false));
-  }, [categoryName]);
+  }, [categoryName, url]);
 
   return (
     <div className="allProductCategory">

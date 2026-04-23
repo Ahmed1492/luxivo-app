@@ -80,12 +80,12 @@ export const Navbar = () => {
         <div className="topbar-left">
           <Link to="/seller-center" className="topbar-link highlight-link">Seller Center</Link>
           <span className="topbar-divider" />
-          <a href="#" className="topbar-link">Download App</a>
+          <a href="https://apps.apple.com" className="topbar-link" target="_blank" rel="noreferrer">Download App</a>
           <span className="topbar-divider" />
           <div className="topbar-social">
             <span>Follow us</span>
-            <a href="#" aria-label="Facebook"><FacebookIcon /></a>
-            <a href="#" aria-label="Instagram"><InstagramIcon /></a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer"><InstagramIcon /></a>
           </div>
         </div>
         <div className="topbar-right">

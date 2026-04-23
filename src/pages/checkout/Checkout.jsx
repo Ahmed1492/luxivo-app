@@ -30,9 +30,10 @@ export const Checkout = () => {
   const navigate   = useNavigate();
 
   // Block checkout until user logs in or explicitly chooses guest
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!isLoggedIn) setGateModal("gate");
-  }, []);
+  }, []); // intentionally run once on mount only
 
   const getTotal = () =>
     products.reduce((sum, p) => sum + p.price * p.quantity, 0).toFixed(2);
