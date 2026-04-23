@@ -21,10 +21,10 @@ export const Footer = () => {
             Your one-stop destination for the best deals across every category. Shop smart, save more.
           </p>
           <div className="footer-socials">
-            <a href="#" aria-label="Facebook"><FacebookIcon /></a>
-            <a href="#" aria-label="Instagram"><InstagramIcon /></a>
-            <a href="#" aria-label="Twitter"><TwitterIcon /></a>
-            <a href="#" aria-label="YouTube"><YouTubeIcon /></a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noreferrer"><InstagramIcon /></a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noreferrer"><TwitterIcon /></a>
+            <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noreferrer"><YouTubeIcon /></a>
           </div>
         </div>
 
@@ -46,9 +46,9 @@ export const Footer = () => {
           <ul>
             <li><Link to="/seller-center">Seller Center</Link></li>
             <li><Link to="/support">Support</Link></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
+            <li><Link to="/">About Us</Link></li>
+            <li><Link to="/">Careers</Link></li>
+            <li><Link to="/">Press</Link></li>
           </ul>
         </div>
 
@@ -83,9 +83,9 @@ export const Footer = () => {
       <div className="footer-bottom spaceX">
         <p>© 2026 Luxivo. All rights reserved by Ahmed Mohamed.</p>
         <div className="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Terms of Service</Link>
+          <Link to="/">Cookie Policy</Link>
         </div>
       </div>
     </footer>

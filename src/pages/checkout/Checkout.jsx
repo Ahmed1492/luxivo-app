@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { resetCart } from "../../redux/cartReducer";
@@ -22,6 +22,7 @@ export const Checkout = () => {
   const [gateModal, setGateModal] = useState(null);
   const [guestMode, setGuestMode] = useState(false);
   const [orderId, setOrderId] = useState("");
+  const gateShown = useRef(false);
 
   const products   = useSelector((state) => state.cart.products);
   const user       = useSelector((state) => state.auth.user);
@@ -29,11 +30,13 @@ export const Checkout = () => {
   const dispatch   = useDispatch();
   const navigate   = useNavigate();
 
-  // Block checkout until user logs in or explicitly chooses guest
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // Show gate once on mount if not logged in
   useEffect(() => {
-    if (!isLoggedIn) setGateModal("gate");
-  }, []); // intentionally run once on mount only
+    if (!gateShown.current && !isLoggedIn) {
+      setGateModal("gate");
+      gateShown.current = true;
+    }
+  }, [isLoggedIn]);
 
   const getTotal = () =>
     products.reduce((sum, p) => sum + p.price * p.quantity, 0).toFixed(2);

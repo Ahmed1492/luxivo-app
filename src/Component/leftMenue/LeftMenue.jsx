@@ -1,4 +1,4 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./LeftMenue.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
@@ -10,7 +10,6 @@ import axios from "axios";
 export const LeftMenue = ({ setIsOpenedMenue, isOpenedMenue }) => {
   const [allCategories, setAllCategories] = useState([]);
   const [search, setSearch] = useState("");
-  const navigate = useNavigate();
 
   const getAllCategories = async () => {
     try {
