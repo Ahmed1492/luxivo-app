@@ -15,7 +15,7 @@ export const Footer = () => {
         {/* Brand */}
         <div className="footer-brand">
           <div className="footer-logo">
-            <span>Snap</span>Up.
+            <span>Luxi</span>vo.
           </div>
           <p className="footer-tagline">
             Your one-stop destination for the best deals across every category. Shop smart, save more.
@@ -58,7 +58,7 @@ export const Footer = () => {
           <ul className="contact-list">
             <li>
               <EmailOutlinedIcon />
-              <a href="mailto:support@snapup.com">support@snapup.com</a>
+              <a href="mailto:support@luxivo.com">support@luxivo.com</a>
             </li>
             <li>
               <PhoneOutlinedIcon />
@@ -81,7 +81,7 @@ export const Footer = () => {
 
       {/* Bottom bar */}
       <div className="footer-bottom spaceX">
-        <p>© 2026 SnapUp. All rights reserved by Ahmed Mohamed.</p>
+        <p>© 2026 Luxivo. All rights reserved by Ahmed Mohamed.</p>
         <div className="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>

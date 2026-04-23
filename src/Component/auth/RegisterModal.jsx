@@ -50,7 +50,7 @@ export const RegisterModal = ({ onClose, onSwitchToLogin }) => {
 
         <div className="auth-header">
           <div className="auth-logo">
-            <span>Snap</span>Up.
+            <span>Luxi</span>vo.
           </div>
           <h2>Create account</h2>
           <p className="auth-subtitle">Join us and start shopping</p>

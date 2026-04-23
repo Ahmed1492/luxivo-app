@@ -88,7 +88,7 @@ export const SellerCenter = () => {
       <div className="seller-hero">
         <div className="hero-content">
           <div className="hero-badge"><StorefrontIcon /> Seller Center</div>
-          <h1>Grow Your Business<br />with <span>SnapUp</span></h1>
+          <h1>Grow Your Business<br />with <span>Luxivo</span></h1>
           <p>Join thousands of sellers reaching millions of buyers every day. Start for free, scale without limits.</p>
           <div className="hero-cta">
             <Link to="/register" className="cta-primary">Start Selling Free <ArrowForwardIcon /></Link>
@@ -197,7 +197,7 @@ export const SellerCenter = () => {
       {/* CTA Banner */}
       <div className="seller-cta-banner spaceX">
         <h2>Ready to start selling?</h2>
-        <p>Join 50,000+ sellers already growing on SnapUp</p>
+        <p>Join 50,000+ sellers already growing on Luxivo</p>
         <Link to="/register" className="cta-primary">
           Create Your Store <ArrowForwardIcon />
         </Link>

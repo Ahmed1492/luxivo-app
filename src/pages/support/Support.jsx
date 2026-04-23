@@ -70,7 +70,7 @@ export const Support = () => {
             <div className="card-icon"><EmailIcon /></div>
             <h3>Email Us</h3>
             <p>Get a response within 24 hours</p>
-            <a href="mailto:support@snapup.com">support@snapup.com</a>
+            <a href="mailto:support@luxivo.com">support@luxivo.com</a>
           </div>
           <div className="contact-card">
             <div className="card-icon"><PhoneIcon /></div>

@@ -1,0 +1,54 @@
+.not-found {
+  min-height: 80vh;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+
+  .nf-content {
+    text-align: center;
+
+    .nf-code {
+      font-size: 120px;
+      font-weight: 900;
+      color: #ff5722;
+      line-height: 1;
+      opacity: 0.15;
+      margin-bottom: -20px;
+    }
+
+    .nf-icon {
+      font-size: 72px;
+      color: #ff5722;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #888;
+      margin-bottom: 32px;
+    }
+
+    .nf-btn {
+      display: inline-block;
+      padding: 13px 36px;
+      background: linear-gradient(135deg, #ff5722, #ff8a65);
+      color: #fff;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+
+      &:hover { opacity: 0.9; transform: translateY(-2px); }
+    }
+  }
+}

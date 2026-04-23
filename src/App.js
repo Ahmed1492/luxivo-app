@@ -10,6 +10,7 @@ import { Checkout } from './pages/checkout/Checkout.jsx';
 import { Support } from './pages/support/Support.jsx';
 import { SellerCenter } from './pages/sellerCenter/SellerCenter.jsx';
 import { SearchResults } from './pages/searchResults/SearchResults.jsx';
+import { NotFound } from './pages/notFound/NotFound.jsx';
 import { Toast } from './Component/toast/Toast.jsx';
 
 const getSingleCategory = 'https://dummyjson.com/products/category/';
@@ -30,6 +31,7 @@ function App() {
           <Route path='/support' element={<Support />} />
           <Route path='/seller-center' element={<SellerCenter />} />
           <Route path='/search' element={<SearchResults />} />
+          <Route path='*' element={<NotFound />} />
 
         </Routes>
       </HashRouter>

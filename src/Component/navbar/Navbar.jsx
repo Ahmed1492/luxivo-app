@@ -139,7 +139,7 @@ export const Navbar = () => {
             <MenuIcon />
           </button>
           <Link to="/" className="navbar-logo">
-            <span>Snap</span>Up.
+            <span>Luxi</span>vo.
           </Link>
         </div>
 
